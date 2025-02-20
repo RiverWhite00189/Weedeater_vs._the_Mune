@@ -1,16 +1,27 @@
-//check for moveme
+var walls = layer_tilemap_get_id("tiles_col");
+var col_detect = move_speed;
+
+//check for movement
 if (keyboard_check(vk_left)) {
-	sprite_index = spr_player_left_walk;
-	x -= move_speed;	
+	if (!place_meeting(x - col_detect, y, walls)) {
+		sprite_index = spr_player_left_walk;
+		x -= move_speed;	
+	}
 } else if (keyboard_check(vk_right)) {
-	sprite_index = spr_player_right_walk;
-	x += move_speed;
+	if (!place_meeting(x + col_detect, y, walls)) {
+		sprite_index = spr_player_right_walk;
+		x += move_speed;
+	}
 } else if (keyboard_check(vk_up)) {
-	sprite_index = spr_player_up_walk;
-	y -= move_speed;	
+	if (!place_meeting(x, y - col_detect, walls)) {
+		sprite_index = spr_player_up_walk;
+		y -= move_speed;	
+	}
 } else if (keyboard_check(vk_down)) {
-	sprite_index = spr_player_down_walk;
-	y += move_speed;
+	if (!place_meeting(x, y + col_detect, walls)) {
+		sprite_index = spr_player_down_walk;
+		y += move_speed;
+	}
 } else {
 	//go back to idle
 	if (keyboard_check_released(vk_left)) {
@@ -23,7 +34,6 @@ if (keyboard_check(vk_left)) {
 		sprite_index = spr_player_down_idle;
 	}
 }
-
 
 //move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
 //move_x *= move_speed;
