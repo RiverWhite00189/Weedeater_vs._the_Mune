@@ -34,10 +34,13 @@
   },
   "name":"BLANK GAME",
   "resources":[
+    {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
+    {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_food","path":"objects/obj_food/obj_food.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Score","path":"objects/Score/Score.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},},
     {"id":{"name":"spr_food","path":"sprites/spr_food/spr_food.yy",},},
     {"id":{"name":"spr_player_down_idle","path":"sprites/spr_player_down_idle/spr_player_down_idle.yy",},},
     {"id":{"name":"spr_player_down_walk","path":"sprites/spr_player_down_walk/spr_player_down_walk.yy",},},
