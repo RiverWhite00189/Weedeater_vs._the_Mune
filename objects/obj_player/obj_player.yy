@@ -29,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_player_down_idle",
     "path":"sprites/spr_player_down_idle/spr_player_down_idle.yy",
