@@ -41,6 +41,8 @@
     {"id":{"name":"Score","path":"objects/Score/Score.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_bullet_tileset","path":"sprites/spr_bullet_tileset/spr_bullet_tileset.yy",},},
+    {"id":{"name":"spr_enemy_default_attack","path":"sprites/spr_enemy_default_attack/spr_enemy_default_attack.yy",},},
+    {"id":{"name":"spr_enemy_default_idle","path":"sprites/spr_enemy_default_idle/spr_enemy_default_idle.yy",},},
     {"id":{"name":"spr_enemy1_attack","path":"sprites/spr_enemy1_attack/spr_enemy1_attack.yy",},},
     {"id":{"name":"spr_enemy1_idle","path":"sprites/spr_enemy1_idle/spr_enemy1_idle.yy",},},
     {"id":{"name":"spr_food","path":"sprites/spr_food/spr_food.yy",},},

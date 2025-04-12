@@ -5,28 +5,11 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < vision_range
 	//sprite_index = spr_enemy1_attack;
 	target_x = obj_player.x;
 	target_y = obj_player.y;
-	
-	//move_and_collide((target_x - x) * move_speed , (target_y - y) * move_speed, walls, undefined, undefined, undefined, move_speed, move_speed);
-
-	//x = target_x;
-	//y = target_y;
+	sprite_index = spr_attack;
 } else {
-	//if (sprite_index = spr_enemy1_attack) sprite_index = spr_enemy1_idle;
-	target_x = x + irandom(64) - irandom(64);
-	target_y = y - irandom(64) + irandom(64);
-	
-	while (place_meeting(target_x, target_y, walls)) {
-		target_x = x + irandom(64) - irandom(64);
-		target_y = y - irandom(64) + irandom(64);
-	}
-	
-	x = target_x;
-	y = target_y;
+	sprite_index = spr_idle;
+	target_x = random_range(xstart - 100, xstart + 100);
+	target_y = random_range(ystart - 100, ystart + 100);
 }
 
 alarm[0] = 60;
-
-//while (x < target_x && y < target_y) {
-	//x += move_speed;
-	//y += move_speed;
-//}
